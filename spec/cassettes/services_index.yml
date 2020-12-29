@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?filter%5BclinicianId%5D=2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.api+json
+      User-Agent:
+      - rest-client/2.1.0 (darwin18.7.0 x86_64) ruby/2.5.1p57
+      Api-Version:
+      - '2019-01-17'
+      Application-Build-Version:
+      - 0.0.0
+      Application-Platform:
+      - web
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - johnny-appleseed.clientsecure.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 29 Dec 2020 09:30:04 GMT
+      Content-Type:
+      - application/vnd.api+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5dccabeb-8f3c-47f7-96b7-f90e10b4bf6b
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"79bf2858fe573d54a16ad1407a99fd8d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.016007'
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"6","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/6"},"attributes":{"description":"Group
+        Therapy","duration":50,"rate":"300.0","callToBook":"false"}},{"id":"3866","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/3866"},"attributes":{"description":"Psychiatric
+        Diagnostic Evaluation","duration":50,"rate":"100.0","callToBook":"false"}},{"id":"3871","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/3871"},"attributes":{"description":"Psychotherapy
+        for Crisis, 60 min","duration":50,"rate":"100.0","callToBook":"false"}},{"id":"52969","type":"cptCodes","links":{"self":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes/52969"},"attributes":{"description":"Developmental
+        Testing, Extended","duration":50,"rate":"100.0","callToBook":"false"}}],"links":{"first":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10","last":"https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?page%5Bnumber%5D=1&page%5Bsize%5D=10"}}'
+    http_version:
+  recorded_at: Tue, 29 Dec 2020 09:30:04 GMT
+recorded_with: VCR 5.1.0

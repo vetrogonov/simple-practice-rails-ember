@@ -1,0 +1,17 @@
+<div class="card col mb-3">
+  <div class="d-flex no-gutters">
+    <div class="col-11">
+      <div class="card-body">
+        <h5 class="card-title">{{@service.description}}</h5>
+        <p class="card-text text-muted">{{@service.duration}} minutes</p>
+      </div>
+    </div>
+    <div class="col-1 d-flex justify-content-end align-items-center">
+      <div>
+        <LinkTo class="btn btn-primary" @route="offices" @models={{array @service.clinician_id @service.id }} @query={{hash description=@service.description duration=@service.duration}}>
+          Select
+        </LinkTo>
+      </div>
+    </div>
+  </div>
+</div>

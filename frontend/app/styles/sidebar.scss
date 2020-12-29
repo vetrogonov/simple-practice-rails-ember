@@ -1,0 +1,18 @@
+.sidebar {
+  .step-number {
+    text-align: center;
+    border: 2px solid #969a9e;
+    height: 25px;
+    width: 25px;
+    line-height: 1.4;
+  }
+
+  .step-number.active {
+    color: #007bff;
+    border: 2px solid #007bff;
+  }
+
+  .disabled {
+    opacity: 0.3;
+  }
+}

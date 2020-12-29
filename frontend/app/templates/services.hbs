@@ -1,0 +1,12 @@
+<div class="d-flex h-100">
+  <Sidebar
+          @step2={{true}}
+  />
+  <div class="col-9 bg-light p-4 h-100">
+    {{#each model as |service|}}
+      <ServiceCard
+              @service={{service}}
+      />
+    {{/each}}
+  </div>
+</div>
